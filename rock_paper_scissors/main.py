@@ -109,7 +109,7 @@ def get_result(score):
 # ** end_game resets every value to its initial value **
 @app.route('/end')
 def end_game():
-    return render_template('index.html', 
+    return render_template('index.html',
                            game_start=False,
                            player_score=0,
                            choices='',
@@ -117,7 +117,7 @@ def end_game():
 
 
 # Replit server config
-app.run(host='0.0.0.0', port=81)
+# app.run(host='0.0.0.0', port=81)
 
 # Local Machine
 app.run(debug=True)
